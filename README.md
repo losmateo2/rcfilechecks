@@ -1,7 +1,7 @@
 # rcfilechecks
 This script compares a NetApp 7-mode running networking configuration against what is configured in the systems RC file.  The script compares both nodes in the HA pair, which it reads in from a file provided at the command line.
 
-The script checks for the following:
+The script checks for the following:<br>
 Missing IPSpaces on controller<br>
 Extra IPspaces  on controller<br>
 IPspaces with different members between controllers<br>
@@ -16,10 +16,9 @@ Interfaces with no partner in the RC file<br>
 
 The output is in a CSV file in the directory the script is in by default.
 
-Running Example
+Running Example<br>
+sh network-config-check.sh /tmp/controller-list<br>
 
-sh network-config-check.sh /tmp/controller-list
-
-Controller List File Example
+Controller List File Example<br>
 node1,node2<br>
 node3,node4<br>
